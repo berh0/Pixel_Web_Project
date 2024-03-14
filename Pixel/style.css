@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 :root{
-    --var--backround:rgb(85, 85, 144);
-    --var--white:#fdfaf2ef;;
+    --var--white:#fdfaf2ef;
+    --var--backround:#6d70c7;
+    --var--one:#a39eff;
+    --var--twice:#3f467f;
+    --var--third:#1b213f;
+    --var--fourth:#000007;
     
 }
 
