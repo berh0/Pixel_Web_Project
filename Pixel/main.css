@@ -19,7 +19,6 @@
 }
 
 body{
-
     margin:10px;
     padding:20px;
     font-family: "Pixelify Sans", sans-serif;
@@ -67,7 +66,7 @@ nav a{
     color:var(--var--white);
 }
 nav a:hover{
-    color: rgb(50, 80, 124);
+    color:var(--var--twice);
 }
 
 
