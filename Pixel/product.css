@@ -119,4 +119,8 @@ ul {
        align-items:center;
        justify-content:space-evenly;
     }
+
+    ul{
+        padding:15px;
+    }
 }
