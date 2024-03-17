@@ -18,6 +18,8 @@
 }
 
 body{
+    background:#000007;
+    background: linear-gradient(0deg, #a39eff 0%, #000007 90%);
     margin:auto;
     padding:20px;
     font-family: "Pixelify Sans", sans-serif;

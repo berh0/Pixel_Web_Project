@@ -18,6 +18,8 @@
 }
 
 body{
+    background:#000007;
+    background: linear-gradient(0deg, #a39eff 0%, #000007 90%);
     margin:auto;
     padding:20px;
     font-family: "Pixelify Sans", sans-serif;
@@ -110,6 +112,70 @@ ul {
     transform: translateX(198px);
 }
 
+.register{
+    background-attachment: fixed;
+    margin:0;
+    
+}
+
+#form{
+    width:400px;
+    color:var(--var--one);
+    margin:10vh auto 0 auto;
+    background-color: var(--var--third);
+    border-radius: 8px;
+    padding:30px;
+}
+
+section h1{
+    text-align: center;
+    color:var(--var--backround);
+    padding:20px;
+}
+
+#form button{
+    background-color: var(--var--twice);
+    color:white;
+    border: 1px solid var(--var--twice);
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error{
+    color:#800000;
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:#800000;
+}
 
 
 @media (max-width:900px){
