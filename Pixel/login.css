@@ -138,17 +138,18 @@ section{
 
 .form a{
     text-decoration: none;
-    color:var(--var--one);
+    color:var(--var--third);
 }
 
 .formbtn{
     cursor: pointer;
     display: inline-block;
     width: 100%;
-    background-color: var(--var--one);
+    color:var(--var-white);
+    background-color: var(--var--third);
     padding: 15px;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 20px;
     border: 0;
     border-radius: 8px;
 }
@@ -158,6 +159,7 @@ section{
 }
 
 .formbtn:active{
+    color:var(--var--twice);
     transform: scale(0.97);
 }
 
@@ -185,7 +187,7 @@ section{
 .form-control input:focus, 
 .form-control input:valid{
     outline: 0;
-    border-bottom-color:var(--var--white);
+    border-bottom-color:var(--var--one);
 }
 
 .form-control label{
@@ -203,7 +205,7 @@ section{
 
 .form-control input:focus + label span,
 .form-control input:valid + label span{
-    color:var(--var--bkr);
+    color:var(--var--one);
     transform: translateY(-30px);
 }
 
