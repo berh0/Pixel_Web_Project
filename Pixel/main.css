@@ -55,7 +55,7 @@ body{
     justify-content:space-between;
 }
 
-nav a{
+nav a {
     color:var(--var--white);
 }
 nav a:hover{
@@ -98,7 +98,8 @@ ul {
 }
 
 .btn:focus
-.src:focus{
+.src:focus
+.sepet:focus{
     outline: none;
 }
 
@@ -165,6 +166,20 @@ main{
 
 .product:hover .overview{
     transform: translateY(0);
+}
+
+main a {
+    color:var(--var--white);
+}
+main a:hover{
+    color:var(--var--twice);
+}
+
+main .sepet{
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
