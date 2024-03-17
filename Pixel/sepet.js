@@ -1,6 +1,3 @@
-
-
-
 const src=document.querySelector('.src')
 const btn=document.querySelector('.btn')
 
