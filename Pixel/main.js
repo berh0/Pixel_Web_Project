@@ -17,50 +17,42 @@ btn.addEventListener('click',()=>{
 })
 
 
-getMovies(API_URL)
+getProducts(API_URL)
 
-async function getMovies(url){
+async function getProducts(url){
     const res=await fetch(url)
     const data= await res.json()
 
-    showMovies(data.results)
+    showProducts(data.results)
 }
 
-function showMovies(movies){
+function showProducts(Products){
     main.innerHTML=''
 
-    movies.forEach((movie) => {
-        const{title,poster_path,vote_average,overview}=movie
+    Products.forEach((product) => {
+        const{title,poster_path,vote_average,overview}=product
 
-        const movieEl=document.createElement('div')
-        movieEl.classList.add('movie')
+        const productEl=document.createElement('div')
+        productEl.classList.add('product')
 
-        movieEl.innerHTML=`  
+        productEl.innerHTML=`  
      
-            <img src="${IMG_PATH+poster_path}" alt="${title}">
-            <div class="movie-info">
+            <a href='product.html'><img src="${IMG_PATH+poster_path}" alt="${title}"></a>
+            <div class="product-info">
                 <h3>${title}</h3> 
                 <span class="${getClassByRate(vote_average)}">${vote_average}</span>
             </div>
-            <div class="overview">
-                <h3>Ürün Bilgileri</h3>
-                    ${overview}
-                </div>
+            <a class='sepet' href='#'><i class="fa-solid fa-cart-shopping"></i>Sepete Ekle</a>
+           
     
         `
 
-        main.appendChild(movieEl)
+        main.appendChild(productEl)
     })
 }
 
 function getClassByRate(vote){
-    if(vote>=8){
-        return 'green'
-    } else if(vote>=5){
-        return 'orange'
-    }else{
-        return 'red'
-    }
+   
 }
 
 sform.addEventListener('submit',(e)=>{
@@ -69,7 +61,7 @@ sform.addEventListener('submit',(e)=>{
     const searchTerm =search.value
 
     if(searchTerm && searchTerm!==''){
-        getMovies(SEARCH_API + searchTerm)
+        getProducts(SEARCH_API + searchTerm)
 
         search.value=''
     }
