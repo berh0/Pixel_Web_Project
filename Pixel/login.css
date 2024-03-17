@@ -136,14 +136,14 @@ section{
 
 .form a{
     text-decoration: none;
-    color:var(--var--bkr);
+    color:var(--var--one);
 }
 
 .formbtn{
     cursor: pointer;
     display: inline-block;
     width: 100%;
-    background-color: var(--var--white);
+    background-color: var(--var--one);
     padding: 15px;
     font-family: inherit;
     font-size: 16px;
@@ -203,4 +203,13 @@ section{
 .form-control input:valid + label span{
     color:var(--var--bkr);
     transform: translateY(-30px);
+}
+
+@media (max-width:900px){
+    .container {
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       justify-content:space-evenly;
+    }
 }
