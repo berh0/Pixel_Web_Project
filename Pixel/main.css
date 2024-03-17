@@ -15,52 +15,45 @@
     padding:0 ;
     list-style: none;
 	text-decoration: none;
-
 }
 
 body{
-    margin:10px;
+    margin:auto;
     padding:20px;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    color: #333;
-    background-color:var(--var--white);;
+    color:var(--var--fourth);
+    background-color:var(--var--third);
 }
 
 .container{ 
-    background-color:var(--var--backround) ;
-    color: var(--var--white);
+   color: var(--var--white);
+    background-color:var(--var--backround) ; 
+    border-radius:20px;
     padding:20px;
     display:flex;
     flex-direction: row;
-    align-items: center;
     justify-content:space-between; 
-    align-items: center;
+    align-items:baseline;
     position:relative;
    
 }
 
+/*
 .logo{
-    width:300px;
     display:flex;
-    justify-content:flex-start;
+    fle-direction:column;
     align-items:center;
-   
 }
-
-h1{
-    font-size:30px;
-}
+*/
 
 .list ul { 
-    width:300px;
+    width:400px;
     display:flex;
+    align-items:baseline;
     justify-content:space-between;
-    align-items:center;
 }
-
-
 
 nav a{
     color:var(--var--white);
@@ -69,30 +62,13 @@ nav a:hover{
     color:var(--var--twice);
 }
 
-
 ul {
     list-style:none;
-}
-
-.logo img{
-   width:50px;   /*resmin boyutunu küçülttüm*/
-   height:50px;
-   border-radius: 50%; /*yuvarlak yapıyor resmi*/
-   border: 2px double #7f98bc; /*resmin kenarında çizgi*/
-   /*margin-right:10px;*/
 }
 
 #sform{
     position:relative;
 }
-
-.src{
-    height: 40px;
-    display:flex;
-    justify-content:center;
-    position:absolute;
-}
-
 
 .src .search{
     background-color:var(--var--white);
@@ -189,4 +165,17 @@ main{
 
 .movie:hover .overview{
     transform: translateY(0);
+}
+
+
+@media (max-width:900px){
+    .container {
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       justify-content:space-evenly;
+    }
+
+
+    
 }
