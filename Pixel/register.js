@@ -1,19 +1,10 @@
 
-const src=document.querySelector('.src')
-const btn=document.querySelector('.btn')
 
 const form = document.querySelector('#form')
 const username = document.querySelector('#username');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const cpassword = document.querySelector('#cpassword');
-
-btn.addEventListener('click',()=>{
-    src.classList.toggle('active')
-    search.focus()
-})
-
-
 
 form.addEventListener('submit',(e)=>{
     
