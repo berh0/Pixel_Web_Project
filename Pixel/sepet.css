@@ -15,6 +15,7 @@
     padding:0 ;
     list-style: none;
 	text-decoration: none;
+  
 }
 
 body{
@@ -110,8 +111,6 @@ ul {
     transform: translateX(198px);
 }
 
-
-
 @media (max-width:900px){
     .container {
        display:flex;
@@ -123,4 +122,145 @@ ul {
     ul{
         padding:15px;
     }
+}
+
+  
+.shop {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.products  {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border-radius:10px;
+  border: 1px solid var(--var--one);
+  padding: 10px;
+  background-color: var(--var--backround);
+  text-align: center;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius:10px;
+  background-color: var(--var--third);
+  color: var(--var--white);
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color:var(--var--fourth);
+}
+
+.cart {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius:20px;
+  border: 1px solid var(--var--one);
+  background-color: var(--var--backround);
+  color:var(--var--white);
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding:10px;
+}
+
+.cart-items {
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--var--white);
+}
+
+.cart-item-price{
+  font-family: "Cursive", Lucida Handwriting;
+}
+
+.total-price {
+  padding:10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight:bold;
+}
+
+.total-value{
+  font-family: "Cursive", Lucida Handwriting;
+}
+
+.total-label {
+  margin-right: 10px;
+}
+
+.order-button {
+  font-family: "Pixelify Sans", sans-serif;
+  padding:15px;
+  font-size:20px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--var--third);
+  color: #fff;
+  border: none;
+  border-radius:20px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: var(--var--fourth);
+  color:var(--var--one)
+}
+.quantity {
+  padding:10px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-value{
+  font-family: "Cursive", Lucida Handwriting;
+}
+
+.quantity button {
+  padding: 3px 8px;
+  margin: 0 5px;
+  border: none;
+  background-color: var(--var--third);
+  color: #fff;
+  cursor: pointer;
+}
+
+.quantity button:hover {
+  background-color: var(--var--one);
+}
+
+.delete-item {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size:15px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color:#4b0082 ;
+  color: var(--var--white);
+  cursor: pointer;
+}
+
+.delete-item:hover {
+  background-color: #2d0f44;
 }
